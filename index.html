@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Electrodomésticos</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#registro">Registro</a></li>
+            <li><a href="#tablaUsuarios">Usuarios Registrados</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido Principal con imágenes -->
+    <div class="main-content">
+        <h1>Bienvenido a nuestra tienda de electrodomésticos Samsung </h1>
+        <p>Encuentra los mejores electrodomésticos del mercado registrese para que pueda acceder a nuestros productos</p>
+        <div class="image-gallery">
+            <img src="Imagenes/Computador.jpeg" alt="Computador">
+            <img src="Imagenes/Lavadora.jpeg" alt="Lavadora">
+            <img src="Imagenes/Televisor.jpeg" alt="Televisor">
+        </div>
+    </div>
+
+    <!-- Formulario de Registro -->
+    <section id="registro" class="registro">
+        <div class="form-container">
+            <img src="Imagenes/Logo.jpeg" alt="Logo" class="form-logo">
+            <h2>Formulario de Registro de Usuarios</h2>
+            <form id="formRegistro">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+                
+                <label for="cedula">Cédula:</label>
+                <input type="text" id="cedula" name="cedula" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+                
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" required>
+                
+                <label for="ciudad">Ciudad:</label>
+                <input type="text" id="ciudad" name="ciudad" required>
+                
+                <label for="pais">País:</label>
+                <input type="text" id="pais" name="pais" required>
+                
+                <button type="submit" class="btn-registrar">Registrar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Tabla de Usuarios Registrados -->
+    <section id="tablaUsuarios">
+        <h2>Usuarios Registrados</h2>
+        <button id="listarUsuarios">Listar Usuarios</button>
+        <div class="tabla-container"> <!-- Contenedor para la tabla -->
+            <table id="tablaUsuariosRegistrados">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Cédula</th>
+                        <th>Email</th>
+                        <th>Teléfono</th>
+                        <th>Dirección</th>
+                        <th>Ciudad</th>
+                        <th>País</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <!-- Los usuarios se insertarán dinámicamente aquí -->
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Derechos reservados &copy; 2024 SAMSUNG</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

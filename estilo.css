@@ -1,0 +1,193 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    padding-top: 60px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #2008a5;
+    padding: 1rem;
+    text-align: center;
+    position: fixed; 
+    width: 100%;
+    top: 0; 
+    z-index: 1000; 
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/* Contenido principal */
+.main-content {
+    padding: 2rem;
+    padding-top: 80px; 
+    text-align: center;
+    background-color: #fff;
+}
+
+/* Galería de imágenes */
+.image-gallery {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.image-gallery img {
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo del contenedor del formulario */
+.form-container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: white;
+}
+
+/* Logo en la parte superior */
+.form-logo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+
+/* Estilo de los campos del formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+label {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+/* Estilo del botón de registro */
+.btn-registrar {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-registrar:hover {
+    background-color: #218838;
+}
+
+/* Tabla de usuarios */
+.tabla-container { 
+    overflow-x: auto; 
+    margin-top: 20px; 
+}
+
+#tablaUsuariosRegistrados {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin: 0 auto; 
+    padding: 0 20px;
+}
+
+#tablaUsuarios {
+    margin: 20px; 
+}
+
+
+.registro {
+    margin: 20px;
+}
+#tablaUsuariosRegistrados th, #tablaUsuariosRegistrados td {
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: left;
+}
+
+#tablaUsuariosRegistrados th {
+    background-color: #333;
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: #2008a5;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 20px;
+    width: 100%;
+    bottom: 0; 
+}
+
+/* Responsividad */
+@media (max-width: 600px) {
+    .navbar ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .image-gallery {
+        flex-direction: column;
+    }
+
+    .image-gallery img {
+        width: 80%;
+        margin: 0 auto 20px;
+    }
+
+    .form-container {
+        width: 90%;
+    }
+
+    footer {
+        width: 100%; 
+    }
+
+    .main-content {
+        margin-top: 20px;
+    }
+    
+    body {
+        padding-top: 100px;
+    }
+}
+
